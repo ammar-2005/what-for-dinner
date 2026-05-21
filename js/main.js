@@ -5,7 +5,7 @@ function recipe(){
     {
         rating: 4.6,
         reviewCount: 140,
-        imgUrl: '../img/it-1.jpg',
+        imgUrl: 'img/it-1.jpg',
         recipeName: "Creamy Tomato & Basil Soup",
         description: "Rich and velvety tomato soup topped with pumpkin seeds, cream, and fresh herbs",
         difficulty: "Easy",
@@ -50,7 +50,7 @@ function recipe(){
     {
         rating: 4.5,
         reviewCount: 98,
-        imgUrl: '../img/it-2.jpg',
+        imgUrl: 'img/it-2.jpg',
         recipeName: "Classic Caesar Salad",
         description: "Crisp romaine lettuce tossed with crunchy croutons, cherry tomatoes, and shaved parmesan",
         difficulty: "Easy",
@@ -93,7 +93,7 @@ function recipe(){
     {
         rating: 4.7,
         reviewCount: 112,
-        imgUrl: '../img/it-3.jpg',
+        imgUrl: 'img/it-3.jpg',
         recipeName: "Spicy Tofu Veggie Bowl",
         description: "Side macro shot of pan-seared spicy tofu with purple cabbage and fresh greens",
         difficulty: "Easy",
@@ -136,7 +136,7 @@ function recipe(){
     {
         rating: 4.8,
         reviewCount: 165,
-        imgUrl: '../img/it-4.jpg',
+        imgUrl: 'img/it-4.jpg',
         recipeName: "Ultimate Tofu Buddha Bowl",
         description: "A colorful, balanced bowl filled with crispy tofu, edamame, sweet corn, tomatoes, and boiled eggs",
         difficulty: "Intermediate",
@@ -180,7 +180,7 @@ function recipe(){
     {
         rating: 4.9,
         reviewCount: 310,
-        imgUrl: '../img/it-5.jpg',
+        imgUrl: 'img/it-5.jpg',
         recipeName: "Authentic Shrimp Pad Thai",
         description: "Classic Thai stir-fried rice noodles with succulent shrimp, bean sprouts, and scrambled eggs",
         difficulty: "Intermediate",
@@ -225,7 +225,7 @@ function recipe(){
     {
         rating: 4.8,
         reviewCount: 220,
-        imgUrl: '../img/it-6.jpg',
+        imgUrl: 'img/it-6.jpg',
         recipeName: "Spicy Thai Red Curry",
         description: "A fiery and rich coconut milk curry loaded with bamboo shoots, eggplant, and fresh basil",
         difficulty: "Intermediate",
@@ -270,7 +270,7 @@ function recipe(){
     {
         rating: 4.9,
         reviewCount: 280,
-        imgUrl: '../img/it-7.jpg',
+        imgUrl: 'img/it-7.jpg',
         recipeName: "Pan-Seared Salmon over Spinach",
         description: "Crispy skin-on salmon served on a bed of sautéed garlic spinach, finished with a fresh cucumber-tomato salsa and balsamic reduction",
         difficulty: "Intermediate",
@@ -315,7 +315,7 @@ function recipe(){
     {
         rating: 4.4,
         reviewCount: 85,
-        imgUrl: '../img/it-8.jpg',
+        imgUrl: 'img/it-8.jpg',
         recipeName: "Gourmet Caprese Baguette",
         description: "Toasted artisanal baguette loaded with melted mozzarella, fresh lettuce, cherry tomatoes, and honey mustard",
         difficulty: "Easy",
@@ -358,7 +358,7 @@ function recipe(){
     {
         rating: 5.0,
         reviewCount: 410,
-        imgUrl: '../img/it-9.jpg',
+        imgUrl: 'img/it-9.jpg',
         recipeName: "Premium Juicy Ribeye Steak",
         description: "Thick-cut ribeye steak seared to medium-rare, carved on a wooden board showing its tender pink center",
         difficulty: "Hard",
@@ -402,7 +402,7 @@ function recipe(){
     {
         rating: 4.7,
         reviewCount: 155,
-        imgUrl: '../img/it-10.jpg',
+        imgUrl: 'img/it-10.jpg',
         recipeName: "Crispy Chickpea & Sweet Potato Tacos",
         description: "Healthy plant-based tacos packed with roasted sweet potatoes, seasoned chickpeas, fresh avocado, and a squeeze of fresh lime",
         difficulty: "Easy",
@@ -447,7 +447,7 @@ function recipe(){
     {
         rating: 4.6,
         reviewCount: 198,
-        imgUrl: '../img/part-2.jpg',
+        imgUrl: 'img/part-2.jpg',
         recipeName: "Creamy Mushroom Fettuccine",
         description: "Fettuccine pasta smothered in a rich, velvety garlic parmesan cream sauce with sautéed cremini mushrooms",
         difficulty: "Easy",
@@ -492,7 +492,7 @@ function recipe(){
     {
         rating: 4.8,
         reviewCount: 340,
-        imgUrl: '../img/images-12.jpg',
+        imgUrl: 'img/images-12.jpg',
         recipeName: "Honey Garlic Glazed Chicken",
         description: "Tender, juicy pan-seared chicken breasts coated in a sticky, sweet, and savory honey garlic glaze",
         difficulty: "Easy",
@@ -537,7 +537,7 @@ function recipe(){
     {
         rating: 4.8,
         reviewCount: 167,
-        imgUrl: '../img/images-13.jpg',
+        imgUrl: 'img/images-13.jpg',
         recipeName: "Middle Eastern Beef Kofta",
         description: "Spiced ground beef skewers grilled to perfection, packed with fresh parsley, onions, and traditional herbs",
         difficulty: "Intermediate",
@@ -581,7 +581,7 @@ function recipe(){
     {
         rating: 4.7,
         reviewCount: 215,
-        imgUrl: '../img/img_14.jpg',
+        imgUrl: 'img/img_14.jpg',
         recipeName: "Classic Beef Stroganoff",
         description: "Tender strips of beef sirloin and sliced mushrooms simmered in a rich sour cream gravy over egg noodles",
         difficulty: "Intermediate",
@@ -626,7 +626,7 @@ function recipe(){
     {
         rating: 4.9,
         reviewCount: 380,
-        imgUrl: '../img/frame-margherita-pizza-15.jpg',
+        imgUrl: 'img/frame-margherita-pizza-15.jpg',
         recipeName: "Homemade Margherita Pizza",
         description: "Simple yet perfect Italian pizza with a crispy crust, aromatic tomato sauce, fresh mozzarella, and basil leaves",
         difficulty: "Intermediate",
@@ -670,7 +670,7 @@ function recipe(){
     {
         rating: 4.5,
         reviewCount: 104,
-        imgUrl: '../img/images-16.jpg',
+        imgUrl: 'img/images-16.jpg',
         recipeName: "Mediterranean Chickpea Salad",
         description: "A refreshing, no-cook dinner bowl featuring protein-packed chickpeas, cucumbers, feta cheese, and a zesty lemon dressing",
         difficulty: "Easy",
@@ -714,7 +714,7 @@ function recipe(){
     {
         rating: 4.8,
         reviewCount: 192,
-        imgUrl: '../img/img-17.jpg',
+        imgUrl: 'img/img-17.jpg',
         recipeName: "Teriyaki Salmon Stir-Fry",
         description: "Flaky pan-seared salmon cubes and fresh broccoli florets tossed in a sweet ginger teriyaki glaze",
         difficulty: "Easy",
@@ -759,7 +759,7 @@ function recipe(){
     {
         rating: 4.9,
         reviewCount: 425,
-        imgUrl: '../img/18.jpg',
+        imgUrl: 'img/18.jpg',
         recipeName: "Creamy Tuscan Garlic Chicken",
         description: "Pan-fried chicken breasts nestled inside a luxurious garlic cream sauce filled with sun-dried tomatoes and spinach",
         difficulty: "Intermediate",

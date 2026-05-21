@@ -1,15 +1,3 @@
-const Rating = document.getElementById('rating');
-const ReviewCount = document.getElementById('review-count');
-const Prep = document.getElementById('prep-time');
-const Cook = document.getElementById('cook-time');
-const Serving = document.getElementById('serving');
-const recipeName = document.getElementById('recipe-name');
-const recipeDescription = document.getElementById('recipe-description');
-const difficultyBadge = document.getElementById('difficulty-badge');
-const difficultyItem = document.getElementById('difficulty-item');
-const timeWarning = document.getElementById('time-warning');
-const tryAnotherBtn = document.getElementById('try-another-btn');
-
 
 function recipe(){
    return [

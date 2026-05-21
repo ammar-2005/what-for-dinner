@@ -1,0 +1,318 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+     scrollbar-width: thin; 
+    scrollbar-color: var(--main-color) transparent;
+}
+:root{
+    
+     --main-color: #ff6900 ;
+     --bg-body: #fff8ec ;
+
+      --red-color:#e7000b;
+      --bg-red:#ffdfdf;
+
+      --green-color:#57c882;
+      --bg-green:#dbfce7;
+
+      --blue-color:#155dfc;
+      --bg-blue:#dbeafe;
+
+       --pink-color:#e60076;
+       --bg-pink:#fce7f3;
+
+       --yellow-color:#d28b07;
+       --bg-yellow:#fef9c2;
+
+       --gra-color:#4a5565;
+       
+
+}
+
+
+
+::-webkit-scrollbar {
+    width: 8px; 
+    height: 8px;
+}
+
+
+::-webkit-scrollbar-track {
+    background: transparent; 
+}
+
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--main-color);
+    border-radius: 20px; 
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #e05d00; 
+}
+body{
+    background-color: var(--bg-body) !important;
+}
+header{
+    z-index: 9999999 !important;
+
+}
+.nav-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background: linear-gradient(to left, #ff5e00 ,#fe4426);
+    color: white;
+    cursor: pointer;
+}
+.img-heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2px; 
+}
+.nav-user{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid var(--main-color);
+    overflow: hidden;
+}
+.nav-user img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    display: block;
+}
+.nav-link{
+    color: var(--gra-color) !important;
+    font-size: 18px !important ;
+    transition: 0.3s;
+}
+.nav-link:hover{
+    color: var(--main-color) !important;
+}
+/* section styles */
+.main-color{
+    color: var(--main-color) !important;    
+}
+.red-color{
+    color: var(--red-color) !important;    
+}
+.blue-color{
+    color: var(--blue-color) !important;
+}
+
+.rounded-3{
+    border-radius: 0.85rem !important;
+}
+ .rounded-4{
+    border-radius: 1.5rem !important;
+}
+.custom-card-height {
+    min-height: 890px !important; 
+}
+
+
+.custom-card-height img {
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover;
+}
+
+@media (min-width: 992px) {
+    .custom-card-height {
+        height: 760px !important; /* ← ارتفاع ثابت بدل 100% */
+    }
+}
+.bg-green{
+    background-color: var(--bg-green) !important;
+}
+.text-green{
+    color: var(--green-color) !important;
+}
+.bg-blue{
+    background-color: var(--bg-blue) !important;
+}
+.text-blue{
+    color: var(--blue-color) !important;
+}
+.btn-orange-box {
+    width: 48px;
+    height: 48px;
+    background-color: #fff3cd;
+    color: var(--main-color) !important; 
+    border: none;
+}
+.btn-orange-box:hover {
+    background-color: #ffe8a1; 
+    color: var(--main-color) !important;
+}
+.cursor-pointer {
+    cursor: pointer;
+}
+.bg-danger-subtle{
+    background-color: var(--bg-red) !important;
+}
+.text-danger{
+    color:#c8050fcc !important;
+}
+.text-red{
+    color: var(--red-color) !important;
+}
+
+.nav-pills .nav-link:focus,
+.nav-pills .nav-link:active,
+.nav-pills .nav-link.active {
+    background-color: transparent !important; 
+    color: var(--main-color) !important; 
+    border-bottom: 3px solid var(--main-color) !important;
+    border-radius: 0 !important; 
+    box-shadow: none !important; 
+}
+
+
+.nav-pills .nav-link {
+    border-bottom: 3px solid transparent !important;
+    transition: border-color 0.2s ease, color 0.2s ease; 
+}
+
+
+.nav-tabs .nav-link.active {
+    border-color: transparent transparent var(--main-color) transparent !important; 
+    color: var(--main-color) !important;
+}
+
+.custom-gradient-bg {
+   background-color: var(--bg-body)
+}
+
+.bg-orange-step {
+    width: 24px;
+    height: 24px;
+    background-color: var(--main-color) !important; 
+}
+
+.text-xs {
+    font-size: 0.75rem !important; 
+}
+
+.bg-orange-icon {
+    width: 48px;
+    height: 48px;
+    background-color: var(--main-color) !important; 
+}
+
+.custom-instructions-scroll {
+    max-height: 420px; 
+    padding-right: 10px; 
+}
+
+
+.custom-instructions-scroll::-webkit-scrollbar {
+    width: 6px;
+}
+
+.custom-instructions-scroll::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.custom-instructions-scroll::-webkit-scrollbar-thumb {
+    background-color: var(--main-color);
+    border-radius: 10px;
+}
+
+
+.custom-nutrition-scroll {
+    max-height: 420px; 
+    padding-right: 8px !important; 
+}
+
+
+.custom-nutrition-scroll::-webkit-scrollbar {
+    width: 6px;
+}
+
+.custom-nutrition-scroll::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.custom-nutrition-scroll::-webkit-scrollbar-thumb {
+    background-color: var(--main-color);
+    border-radius: 10px;
+}
+.btn-orange-sm {
+    width: 40px;
+    height: 40px;
+    background-color: var(--bg-orange); 
+    color: var(--main-color) !important; 
+}
+
+.btn-blue-sm {
+    width: 40px;
+    height: 40px;
+    background-color: var(--bg-blue); 
+    color: var(--blue-color) !important;
+}
+.btn-yellow-sm {
+    width: 40px;
+    height: 40px;
+    background-color: var(--bg-yellow); 
+    color: var(--yellow-color) !important; 
+}
+.btn-red-sm{
+    width: 40px;
+    height: 40px;
+    background-color: var(--bg-red); 
+    color: var(--red-color) !important; 
+}
+.btn-green-sm{
+    width: 40px;
+    height: 40px;
+    background-color: var(--bg-green);
+    color: var(--green-color) !important;
+}
+.btn-pin-sm{
+    width: 40px;
+    height: 40px;
+    background-color: var(--bg-pink);
+    color: var(--pink-color) !important;
+}
+.text-secondary-dark {
+    color: #4b5563 !important; 
+}
+.bg-orange-subtle{
+    background-color: var(--bg-body) !important;
+}
+.bg-orange-st{
+    width: 22px;
+    height: 22px;
+    background-color: #f5a30a!important;
+}
+
+.btn-gradient-hero {
+    background: linear-gradient(to right, #ff5722, #f44336) !important;
+    border: none !important;
+    transition: all 0.3s ease-in-out !important;
+    cursor: pointer;
+}
+
+.btn-gradient-hero:hover {
+    background: linear-gradient(to right, #e64a19, #d32f2f) !important;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15) !important;
+}
+
+
+.hover-scale-effect {
+    display: inline-block; 
+}
+

@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What's For Dinner</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- header  -->
+     <header class="position-fixed w-100 bg-white shadow-sm p-1 z-index-1">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary container">
+        <div class="container-fluid p-0">
+            <!-- logo -->
+            <div class="navbar navbar-brand d-flex align-items-center gap-3 justify-content-between">
+                 
+                 <div class="nav-icon ">
+                    <i class="fa-solid fa-utensils"></i>
+                </div>
+            
+                <div class="img-heading">
+                <h3 class="m-0 fs-4  fw-bold text-dark">What's For Dinner</h3>
+                <p class="m-0 fs-6 text-muted">Your daily meal inspiration</p>
+                </div>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- navbar links -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 g-1">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">
+                            <i class="fa-solid fa-bookmark"></i>
+                          </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="fa-solid fa-clock-rotate-left"></i>
+                        </a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link " aria-disabled="true">
+                            <i class="fa-solid fa-gear"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item mx-2  ">
+                         <div class="nav-user">
+                            <img src="img/user.jpg" alt="" class="">
+                         </div>
+                    </li>
+                </ul>
+               
+            </div>
+        </div>
+    </nav>
+    </header>
+    
+    <main class="container-xl px-4 py-5 ">
+        <!-- section hero -->
+        <section class="bg-white rounded-4 shadow-lg overflow-hidden mb-4 border border-warning-subtle mt-5 " id="hero">
+            <div class="row g-0" style="min-height: 760px;">
+                <!-- image column -->
+                <div class="col-15 col-lg-5 p-0 overflow-hidden position-relative custom-card-height">
+                    <img src="img/it-1.jpg" alt="" class="w-100 h-100 object-fit-cover d-block" id="recipe-image">
+                    <!-- service -->
+                    <div class="position-absolute top-0 start-0 m-4 bg-white rounded-pill px-4 py-2 shadow-lg">
+    
+                        <div class=" d-flex align-items-center gap-2">
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <span id="rating">4.5</span>
+                            <span class="text-muted" id="review-count">(267 reviews)</span>
+                        </div>
+                    </div>
+                    <!-- icon && info -->
+
+                    <div class="position-absolute bottom-0 start-0 end-0 m-4 bg-white-95 bg-white rounded-4 p-1 p-md-4 shadow-lg">
+                        <div class="row row-cols-3 g-1 text-center">
+                            <div class="col">
+                                <i class="fa-solid fa-clock main-color fs-4 fs-md-2 mb-2"></i>
+                                <p class="small fs-md-6 text-muted">prep time</p>
+                                <p id="prep-time" class="w-bold text-dark fs-6 fs-md-5">15 mins</p>
+                            </div>
+                            <div class="col">
+                                <i class="fa-solid fa-fire-burner red-color fs-4 fs-md-2 mb-2"></i>
+                                <p class="small fs-md-6 text-muted">cook time</p>
+                                <p id="cook-time" class="w-bold text-dark fs-6 fs-md-5">60 mins</p>
+                            </div>
+                            <div class="col">
+                                <i class="fa-solid fa-users blue-color fs-4 fs-md-2 mb-2"></i>
+                                <p class="small fs-md-6 text-muted">serving</p>
+                                <p id="serving" class="w-bold text-dark fs-6 fs-md-5">4 people</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- content column for order -->
+    
+                <div class=" col-lg-7 col-15  p-4 p-lg-5 h-100 overflow-y-scroll"> 
+                    <!-- top info for the recipe -->
+                    <div class="d-flex flex-column flex-md-row gap-4 align-items-start justify-content-between mb-2">
+                        <!-- item-1 -->
+                        <div class="">
+                            <!-- 2span -->
+                            <div class="d-flex align-items-center gap-2 mb-3">
+                                <span class="bg-green text-green px-2 py-1 rounded-pill fs-6 fw-semibold" id="difficulty-badge">
+                                    Intermediate
+                                </span>
+                                <span class="bg-blue text-blue px-2 py-1 rounded-pill fs-6 fw-semibold" id="difficulty-item">
+                                    Mediterranean
+                                </span>
+                            </div>
+                            <h3 id="recipe-name" class="fs-2 fs-md-1 fw-bold text-dark mb-2">French Onion Soup</h3>
+                            <p id="recipe-description" class="fs-6 fs-md-5 text-secondary">Rich beef broth with caramelized onions and
+                                melted cheese</p>
+                    
+                        </div>
+                        <!-- buttons share or save -->
+                        <div class="order-lg-1 order-0 align-self-end align-self-md-center d-flex gap-3">
+                            <button
+                                class="btn-orange-box d-flex align-items-center justify-content-center rounded-3 transition cursor-pointer">
+                                <i class="fa-solid fa-bookmark"></i>
+                            </button>
+                            <button
+                                class="btn-orange-box d-flex align-items-center justify-content-center rounded-3 transition cursor-pointer">
+                                <i class="fa-solid fa-share-nodes"></i>
+                            </button>
+                    
+                        </div>
+                    </div>
+                    <!-- warning -->
+                    <div class="bg-danger-subtle border-start border-4 border-danger p-2 rounded-3  mb-3" id="time-warning">
+                        <div class="d-flex align-content-center align-items-center">
+                            <i class="fa-solid fa-triangle-exclamation mx-3 text-red fs-5"></i>
+                            <div class="">
+                                <p class="fw-semibold text-danger fs-6 fs-md-5  p-0 m-0  ">Extended Preparation Time</p>
+                                <p class="small fs-md-6 text-red p-0 m-0">This recipe requires more than 45 minutes to prepare. Plan
+                                    accordingly! </p>
+                            </div>
+                        </div>
+                    
+                    </div>
+                    <!-- nav && tabs -->
+                     <!-- nav -->
+                    <ul class="nav nav-pills mx-5 my-3  mb-2 container " id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+                                type="button" role="tab" aria-controls="pills-home" aria-selected="true"> <i class="fa-solid fa-list-check"></i> Ingredients</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+                                type="button" role="tab" aria-controls="pills-profile" aria-selected="false"> <i class="fa-solid fa-book-open"></i>Instructions</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"
+                                type="button" role="tab" aria-controls="pills-contact" aria-selected="false"><i class="fa-solid fa-chart-pie"></i>Nutrition</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-chef-tips-tab" data-bs-toggle="pill" 
+                                 data-bs-target="#pills-chef-tips"
+                                type="button" role="tab" aria-controls="pills-chef-tips" aria-selected="false" > <i class="fa-solid fa-lightbulb"></i> Chef's Tips</button>
+                        </li>
+                    </ul>
+                    <!-- tab content -->
+                    <div class="tab-content" id="pills-tabContent">
+                        <!-- Ingredients Tab -->
+                        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
+                            tabindex="0">
+                            <div class="custom-gradient-bg rounded-4 p-4">
+                                <ul class="d-flex flex-column gap-3" id="ingredients-list">
+                                    <!-- item-1 -->
+                                    <li class="d-flex carousel-item-start">
+                                        <div class="d-flex align-items-center justify-content-center bg-orange-step text-white rounded-circle text-xs fw-bold mt-1 me-3 flex-shrink-0">
+                                            1
+                                        </div>
+                                        <span class="text-muted">4 large onions, thinly sliced</span>
+                                    </li>
+                                    <!-- item-2 -->
+                                    <li class="d-flex carousel-item-start">
+                                        <div class="d-flex align-items-center justify-content-center bg-orange-step text-white rounded-circle text-xs fw-bold mt-1 me-3 flex-shrink-0">
+                                            2
+                                        </div>
+                                        <span class="text-muted">4 tablespoons butter</span>
+                                    </li>
+                                    <!-- item-3 -->
+                                    <li class="d-flex carousel-item-start">
+                                        <div class="d-flex align-items-center justify-content-center bg-orange-step text-white rounded-circle text-xs fw-bold mt-1 me-3 flex-shrink-0">
+                                            3
+                                        </div>
+                                        <span class="text-muted">1 liter beef broth</span>
+                                    </li>
+                                    <!-- item-4 -->
+                                    <li class="d-flex carousel-item-start">
+                                        <div class="d-flex align-items-center justify-content-center bg-orange-step text-white rounded-circle text-xs fw-bold mt-1 me-3 flex-shrink-0">
+                                            4
+                                        </div>
+                                        <span class="text-muted">1/2 cup white wine</span>
+                                    </li>
+                                    <!-- item-5 -->
+                                    <li class="d-flex carousel-item-start">
+                                        <div class="d-flex align-items-center justify-content-center bg-orange-step text-white rounded-circle text-xs fw-bold mt-1 me-3 flex-shrink-0">
+                                            5
+                                        </div>
+                                        <span class="text-muted">2 bay leaves</span>
+                                    </li>
+                                    <!-- item-6 -->
+                                    <li class="d-flex carousel-item-start">
+                                        <div class="d-flex align-items-center justify-content-center bg-orange-step text-white rounded-circle text-xs fw-bold mt-1 me-3 flex-shrink-0">
+                                            6
+                                        </div>
+                                        <span class="text-muted">Fresh thyme</span>
+                                    </li>
+                                    <!-- item-7 -->
+                                    <li class="d-flex carousel-item-start">
+                                        <div class="d-flex align-items-center justify-content-center bg-orange-step text-white rounded-circle text-xs fw-bold mt-1 me-3 flex-shrink-0">
+                                            7
+                                        </div>
+                                        <span class="text-muted">Baguette slices</span>
+                                    </li>
+                                    <!-- item-8 -->
+                                    <li class="d-flex carousel-item-start">
+                                        <div class="d-flex align-items-center justify-content-center bg-orange-step text-white rounded-circle text-xs fw-bold mt-1 me-3 flex-shrink-0">
+                                            8
+                                        </div>
+                                        <span class="text-muted">200g Gruyère cheese, grated</span>
+                                    </li>
+            
+
+
+                                </ul>
+
+                            </div>
+
+
+                        </div>
+                            <!-- Instructions Tab -->
+                        <div class="tab-pane fade " id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+
+                            <div class="d-flex flex-column gap-3 overflow-y-scroll custom-instructions-scroll" id="instructions-list">
+                                <!-- item-1 -->
+                                <div class="d-flex carousel-item-start align-content-center">
+                                    <div class="d-flex align-items-center justify-content-center bg-orange-icon text-white rounded-3 fs-4 fw-bold me-4 flex-shrink-0">
+                                        1
+                                    </div>
+                                    <div class="flex-grow-1 pt-2">
+                                        <p class="text-muted">Melt butter in a large pot. Add onions and cook slowly for 40 minutes, stirring occasionally until caramelized.</p>
+                                    </div>
+                                </div>
+                                <!-- item-2 -->
+                                <div class="d-flex carousel-item-start align-content-center">
+                                    <div class="d-flex align-items-center justify-content-center bg-orange-icon text-white rounded-3 fs-4 fw-bold me-4 flex-shrink-0">
+                                        2
+                                    </div>
+                                    <div class="flex-grow-1 pt-2">
+                                        <p class="text-muted">Add white wine and deglaze the pot, scraping up brown bits.</p>
+                                    </div>
+                                </div>
+                                <!-- item-3 -->
+                                <div class="d-flex carousel-item-start align-content-center">
+                                    <div class="d-flex align-items-center justify-content-center bg-orange-icon text-white rounded-3 fs-4 fw-bold me-4 flex-shrink-0">
+                                        3
+                                    </div>
+                                    <div class="flex-grow-1 pt-2">
+                                        <p class="text-muted">Pour in beef broth, add bay leaves and thyme. Simmer for 20 minutes.</p>
+                                    </div>
+                                </div>
+                                <!-- item-4 -->
+                                <div class="d-flex carousel-item-start align-content-center">
+                                    <div class="d-flex align-items-center justify-content-center bg-orange-icon text-white rounded-3 fs-4 fw-bold me-4 flex-shrink-0">
+                                        4
+                                    </div>
+                                    <div class="flex-grow-1 pt-2">
+                                        <p class="text-muted">Meanwhile, toast baguette slices until golden.</p>
+                                    </div>
+                                </div>
+                                <!-- item-5 -->
+                                <div class="d-flex carousel-item-start align-content-center">
+                                    <div class="d-flex align-items-center justify-content-center bg-orange-icon text-white rounded-3 fs-4 fw-bold me-4 flex-shrink-0">
+                                        5
+                                    </div>
+                                    <div class="flex-grow-1 pt-2">
+                                        <p class="text-muted">Ladle soup into oven-safe bowls. Top with toasted bread and cheese..</p>
+                                    </div>
+                                </div>
+                                <!-- item-6 -->
+                                <div class="d-flex carousel-item-start align-content-center">
+                                    <div class="d-flex align-items-center justify-content-center bg-orange-icon text-white rounded-3 fs-4 fw-bold me-4 flex-shrink-0">
+                                        6
+                                    </div>
+                                    <div class="flex-grow-1 pt-2">
+                                        <p class="text-muted">Broil for 3-5 minutes until cheese is melted and bubbly. Serve hot.</p>
+                                    </div>
+                                </div>
+                                
+
+                            </div>
+                        </div>
+                            <!-- Nutrition Tab -->
+                        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
+                            <div class="row row-cols-1 row-cols-md-2 g-4 m-2 p-2 overflow-y-scroll custom-nutrition-scroll " id="nutrition-info">
+                                <!-- box-1 -->
+                                 <div class="d-flex align-items-center justify-content-between p-3 bg-light   rounded-3">
+                                    <div class="d-flex carousel-item-center align-items-center">
+                                        
+                                        <!-- icon -->
+                                         <div class="d-flex align-items-center justify-content-center btn-orange-sm rounded-3 me-3">
+                                            <i class="fa-solid fa-fire"></i>
+                                         </div>
+                                         <span class="text-secondary-dark fw-medium small fs-md-5">Calories</span>
+                                    </div>
+                                    <span class="text-dark fw-bold fs-6 fs-md-4" id="calories-value">380 kcal</span>
+                                 </div>
+                                <!-- box-2 -->
+                                 <div class="d-flex align-items-center justify-content-between p-3 bg-light  rounded-3">
+                                    <div class="d-flex carousel-item-center align-items-center">
+                                        
+                                        <!-- icon -->
+                                         <div class="d-flex align-items-center justify-content-center btn-blue-sm rounded-3 me-3">
+                                            <i class="fa-solid fa-dumbbell"></i>
+                                         </div>
+                                         <span class="text-secondary-dark fw-medium small fs-md-5">Protein</span>
+                                    </div>
+                                    <span class="text-dark fw-bold fs-6 fs-md-4" id="protein-value"> 18g</span>
+                                 </div>
+                                <!-- box-3 -->
+                                 <div class="d-flex align-items-center justify-content-between p-3 bg-light rounded-3">
+                                    <div class="d-flex carousel-item-center align-items-center">
+                                        
+                                        <!-- icon -->
+                                         <div class="d-flex align-items-center justify-content-center btn-yellow-sm rounded-3 me-3">
+                                            <i class="fa-solid fa-wheat-awn"></i>
+                                         </div>
+                                         <span class="text-secondary-dark fw-medium small fs-md-5">Carbohydrates</span>
+                                    </div>
+                                    <span class="text-dark fw-bold fs-6 fs-md-4" id="carbohydrates-value">36g</span>
+                                 </div>
+                                <!-- box-4 -->
+                                 <div class="d-flex align-items-center justify-content-between p-3 bg-light rounded-3">
+                                    <div class="d-flex carousel-item-center align-items-center">
+                                        
+                                        <!-- icon -->
+                                         <div class="d-flex align-items-center justify-content-center btn-red-sm rounded-3 me-3">
+                                            <i class="fa-solid fa-droplet"></i>
+                                         </div>
+                                         <span class="text-secondary-dark fw-medium small fs-md-5">Fat</span>
+                                    </div>
+                                    <span class="text-dark fw-bold fs-6 fs-md-4" id="fat-value">18g</span>
+                                 </div>
+                                <!-- box-5 -->
+                                 <div class="d-flex align-items-center justify-content-between p-3 bg-light rounded-3">
+                                    <div class="d-flex carousel-item-center align-items-center">
+                                        
+                                        <!-- icon -->
+                                         <div class="d-flex align-items-center justify-content-center btn-green-sm rounded-3 me-3">
+                                            <i class="fa-solid fa-seedling"></i>
+                                         </div>
+                                         <span class="text-secondary-dark fw-medium small fs-md-5">Fiber</span>
+                                    </div>
+                                    <span class="text-dark fw-bold fs-6 fs-md-4" id="fiber-value">4g</span>
+                                 </div>
+                                <!-- box-6 -->
+                                 <div class="d-flex align-items-center justify-content-between p-3 bg-light rounded-3">
+                                    <div class="d-flex carousel-item-center align-items-center">
+                                        
+                                        <!-- icon -->
+                                         <div class="d-flex align-items-center justify-content-center btn-pin-sm rounded-3 me-3">
+                                           <i class="fa-solid fa-cube"></i>
+                                         </div>
+                                         <span class="text-secondary-dark fw-medium small fs-md-5">Sodium</span>
+                                    </div>
+                                    <span class="text-dark fw-bold fs-6 fs-md-4" id="sodium-value">980mg</span>
+                                 </div>
+
+                            </div>
+
+
+
+                        </div>
+                            <!-- Chef's Tips Tab -->
+                        <div class="tab-pane fade" id="pills-chef-tips" role="tabpanel" aria-labelledby="pills-chef-tips-tab" tabindex="0">
+                            <div class="d-flex flex-column gap-2" id="tips-list">
+                            <!-- item-1 -->
+                             <div class="bg-orange-subtle border-start border-4 border-warning p-3 rounded-3  mb-3" id="time-warning">
+                        <div class="d-flex align-content-center align-items-center">
+                            <div class="d-flex align-items-center justify-content-center bg-orange-st text-white rounded-circle fs-6 fw-bold me-3 flex-shrink-0">
+                                 
+                                <i class="fa-solid fa-check mx-3 text-white "></i>
+                            </div>
+                            
+                            <div class="">
+                                <p class="fw-semibold text-muted fs-6 fs-md-5  p-0 m-0      ">Patience is key - don't rush the onion caramelization</p>
+                               
+                            </div>
+                        </div>
+                    
+                            </div>
+                            <!-- item-2 -->
+                             <div class="bg-orange-subtle border-start border-4 border-warning p-3 rounded-3  mb-3" id="time-warning">
+                        <div class="d-flex align-content-center align-items-center">
+                            <div class="d-flex align-items-center justify-content-center bg-orange-st text-white rounded-circle fs-6 fw-bold me-3 flex-shrink-0">
+                                 
+                                <i class="fa-solid fa-check mx-3 text-white "></i>
+                            </div>
+                            
+                            <div class="">
+                                <p class="fw-semibold text-muted fs-6 fs-md-5  p-0 m-0      ">Use good quality beef broth for best flavor</p>
+                               
+                            </div>
+                        </div>
+                    
+                            </div>
+                            <!-- item-3 -->
+                             <div class="bg-orange-subtle border-start border-4 border-warning p-3 rounded-3  mb-3" id="time-warning">
+                        <div class="d-flex align-content-center align-items-center">
+                            <div class="d-flex align-items-center justify-content-center bg-orange-st text-white rounded-circle fs-6 fw-bold me-3 flex-shrink-0">
+                                 
+                                <i class="fa-solid fa-check mx-3 text-white "></i>
+                            </div>
+                            
+                            <div class="">
+                                <p class="fw-semibold text-muted fs-6 fs-md-5  p-0 m-0      ">Gruyère can be substituted with Swiss cheese</p>
+                               
+                            </div>
+                        </div>
+                    
+                            </div>
+                            <!-- item-4 -->
+                             <div class="bg-orange-subtle border-start border-4 border-warning p-3 rounded-3  mb-3" id="time-warning">
+                        <div class="d-flex align-content-center align-items-center">
+                            <div class="d-flex align-items-center justify-content-center bg-orange-st text-white rounded-circle fs-6 fw-bold me-3 flex-shrink-0">
+                                 
+                                <i class="fa-solid fa-check mx-3 text-white "></i>
+                            </div>
+                            
+                            <div class="">
+                                <p class="fw-semibold text-muted fs-6 fs-md-5  p-0 m-0      ">Watch carefully when broiling to avoid burning</p>
+                               
+                            </div>
+                        </div>
+                    
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- btn -->
+                     <div class="d-flex align-items-center gap-3 mt-5 pt-4 border-top border-secondary-subtle" id="try-another-btn">
+                        <button class="btn-gradient-hero text-white px-3 px-md-4 py-2 py-md-3 rounded-3 fw-semibold shadow hover-scale-effect  fs-md-6 fs-5 d-flex align-items-center gap-2" id="next-recipe-btn">
+                            <i class="fa-solid fa-arrows-rotate fs-6"></i>
+                            Try Another Recipe
+              
+
+                        </button>
+
+                       
+
+                     </div>
+
+
+                </div>
+
+              
+                
+            </div>
+        </section>
+    </main>
+
+
+
+
+
+
+
+
+
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
